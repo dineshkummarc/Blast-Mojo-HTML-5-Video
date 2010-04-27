@@ -13,12 +13,12 @@ dojo.declare("foo.global.behavior.TogglePlayBehavior", mojo.command.Behavior,
 {
 	execute: function(requestObj) {
 		
-		var params = requestObj.getParams()
+		var params = requestObj.getParams();
 		// Get element user clicked on
 		var bol = params.bol;
-		var video = $(params.video)[0];
+		var video = mojo.queryFirst(params.video);
 		// toggle
-		(bol)? video.play() : video.pause();
+		(bol) ? video.play() : video.pause();
 		
   	}
 });

@@ -12,7 +12,7 @@ dojo.declare("foo.global.behavior.KillSwfObjectBehavior", mojo.command.Behavior,
 		
 		// Get params
 		var params = requestObj.getParams();
-		var target = $(params.target)[0];
+		var target = mojo.queryFirst(params.target);
 		
 		// Crete new null object
 		var so = new SWFObject();	
@@ -26,7 +26,7 @@ dojo.declare("foo.global.behavior.KillSwfObjectBehavior", mojo.command.Behavior,
 		var title =  params.title;
 		
 		// remove title if defined on page
-		if(title) $(title).empty();
+		if(title) title = null;
 		
 		//publish a message on complete
 		if(params.onComplete != undefined){

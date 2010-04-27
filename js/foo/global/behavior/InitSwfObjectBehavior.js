@@ -21,7 +21,7 @@ dojo.declare("foo.global.behavior.InitSwfObjectBehavior", mojo.command.Behavior,
 
 		// Get params
 		var params = requestObj.getParams();
-		var target = $(params.elementId).get(0);
+		var target = mojo.queryFirst(params.elementId);
 		
 		var so = new SWFObject(params.src, params.contentName, params.width, params.height, params.version, params.defaultBackground);
 		

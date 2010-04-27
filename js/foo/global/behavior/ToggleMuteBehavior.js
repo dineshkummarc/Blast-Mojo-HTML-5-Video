@@ -16,7 +16,7 @@ dojo.declare("foo.global.behavior.ToggleMuteBehavior", mojo.command.Behavior,
 		var params = requestObj.getParams()
 		// Get element user clicked on
 		var bol = params.bol;
-		var video = $(params.video)[0];
+		var video = mojo.queryFirst(params.video);
 		// toggle
 		video.muted = Boolean(bol);
 	

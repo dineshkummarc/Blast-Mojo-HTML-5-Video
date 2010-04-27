@@ -25,12 +25,17 @@ dojo.require("mojo.command.Behavior");
 	  ...
 	  ...
 	</ul>
+	
+	
+	TODO: Remove dependency on jQuery API.
 
 */
 
 dojo.declare("foo.global.behavior.ToggleCollapseBehavior", mojo.command.Behavior, 
 {
 	execute: function(requestObj) {
+	  
+	  console.log("Collapse video player!");
 		// Get element user clicked on
 		var btn = $(requestObj.callerObj);
 		// Toggle element

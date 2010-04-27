@@ -1,0 +1,5 @@
+.settings
+*~
+*.diff
+*.patch
+.DS_Store
