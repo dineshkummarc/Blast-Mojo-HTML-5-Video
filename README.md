@@ -1,5 +1,7 @@
-[HTML5 Video Player with Flash Fallback for Blast Mojo Framework](http://blastmojo.com/) - by Paul Ortchanian
+[HTML5 Video Player with Flash Fallback for Blast Mojo Framework](http://blastmojo.com/) 
 ================================
+by Paul Ortchanian
+
 
 How to integrate HTML5 video into your existing web application
 ---------------------------------------
